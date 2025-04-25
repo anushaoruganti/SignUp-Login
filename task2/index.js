@@ -256,6 +256,7 @@ let prodData=[
     data.forEach(x=>{
         let card=document.createElement("div")
         card.id="card"
+        
         card.innerHTML=`
         <img src="${x.image}" alt="Image" width=250 height=200/>
         <h1>${x.title}</h1>
@@ -293,12 +294,12 @@ function addToCart(product){
 let favoriteitems=document.querySelector(".favorite").addEventListener("click",showFavorites)
 function showFavorites(){
     const favs = JSON.parse(localStorage.getItem("favcart")) || []
-    showFavsInTable(favs,"fav-items")
+    showFavsInTable(favs,"Your Favorites")
 }
 
 function showCartItems(){
     const cartItems = JSON.parse(localStorage.getItem("addedToCart")) || []
-    showFavsInTable(cartItems,"cart-items")
+    showFavsInTable(cartItems,"You Are Sure Now CheckOut")
 }
 
 

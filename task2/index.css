@@ -1,0 +1,22 @@
+#cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 1em;
+    margin-top: 2em;
+}
+#card{
+    width: 250px;
+    height: 320px;
+    border: 2px black solid;
+    
+}
+#card > h1,p{
+    font-size: 0.7em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 8px;
+  }
+  
